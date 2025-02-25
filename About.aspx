@@ -4,7 +4,7 @@
  
 
   <main class="main">
-hello
+hello world
     <!-- About Section -->
     <section id="about" class="about section">
 
