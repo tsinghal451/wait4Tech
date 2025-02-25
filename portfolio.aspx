@@ -1,132 +1,196 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="portfolio.aspx.cs" Inherits="wait4Tech.portfolio" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-   
+    <style>
+        /* Hero Section */
+        .hero {
+            background: url('assets/img/caeer.jpg') center center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
 
-  <main class="main">
+            .hero h1 {
+                font-size: 2.5rem;
+                color: #2742cc;
+            }
 
+            .hero p {
+                color: black;
+            }
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
+        /* Why Join Us */
+        .why-join {
+            padding: 50px 0;
+            background: #f8f9fa;
+        }
 
-      <div class="container">
+        .feature-box {
+            text-align: center;
+            padding: 20px;
+        }
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+            .feature-box i {
+                font-size: 40px;
+                color: #007bff;
+            }
 
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Card</li>
-            <li data-filter=".filter-branding">Web</li>
-          </ul><!-- End Portfolio Filters -->
+        /* Job Listings */
+        .job-listings {
+            padding: 50px 0;
+        }
 
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+        .job-card {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            text-align: center;
+        }
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.aspx" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
+            .job-card h3 {
+                font-size: 1.5rem;
+            }
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.aspx" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
+            .job-card p {
+                color: #666;
+            }
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.aspx" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
+        .btn-outline-primary {
+            border: 2px solid #007bff;
+            color: #007bff;
+            padding: 8px 15px;
+        }
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.aspx" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
+            .btn-outline-primary:hover {
+                background: #007bff;
+                color: white;
+            }
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.aspx" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
+        /* Apply Form */
+        .apply-form {
+            padding: 50px 0;
+            background: #f0f0f0;
+            text-align: center;
+        }
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.aspx" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
+        .apply-box {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        /* Internship Card - Slightly Different Styling */
+        .internship-card {
+            border: 2px dashed #007bff;
+            background: #f8f9fa;
+        }
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.aspx" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.aspx" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.aspx" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
+            .internship-card h3 {
+                color: #007bff;
+            }
+    </style>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container text-center">
+            <h1>Grow Your Career with Us</h1>
+            <p>Join a passionate team of innovators and professionals.</p>
+            <a href="#job-listings" class="btn btn-primary">Explore Jobs</a>
 
         </div>
+    </section>
 
-      </div>
+    <!-- Why Join Us -->
+    <section id="why-join" class="why-join">
+        <div class="container text-center">
+            <h2>Why Work With Us?</h2>
+            <div class="row">
+                <div class="col-md-4 feature-box">
+                    <i class="bi bi-lightbulb"></i>
+                    <h4>Innovative Culture</h4>
+                    <p>Work in an environment that fosters creativity and growth.</p>
+                </div>
+                <div class="col-md-4 feature-box">
+                    <i class="bi bi-people"></i>
+                    <h4>Team Collaboration</h4>
+                    <p>Be a part of a dynamic and supportive team.</p>
+                </div>
+                <div class="col-md-4 feature-box">
+                    <i class="bi bi-graph-up"></i>
+                    <h4>Career Growth</h4>
+                    <p>We provide ample opportunities for learning and career development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </section><!-- /Portfolio Section -->
+    <!-- Job Listings -->
+    <section id="job-listings" class="job-listings">
+        <div class="container">
+            <h2 class="text-center">Current Openings</h2>
+            <div class="row">
 
-  </main>
+                <!-- Social Media Manager -->
+                <div class="col-md-6">
+                    <div class="job-card">
+                        <h3>Social Media Manager</h3>
+                        <p><strong>Location:</strong> Remote | <strong>Type:</strong> Full-Time</p>
+                        <p>Manage social media campaigns and strategy.</p>
+                        <a href="#apply-form" class="btn btn-outline-primary">Apply Now</a>
+                    </div>
+                </div>
 
+                <!-- Web Developer -->
+                <div class="col-md-6">
+                    <div class="job-card">
+                        <h3>Web Developer</h3>
+                        <p><strong>Location:</strong> New Delhi | <strong>Type:</strong> Full-Time</p>
+                        <p>Develop modern and responsive websites.</p>
+                        <a href="#apply-form" class="btn btn-outline-primary">Apply Now</a>
+                    </div>
+                </div>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+                <!-- Graphic Designer -->
+                <div class="col-md-6">
+                    <div class="job-card">
+                        <h3>Graphic Designer</h3>
+                        <p><strong>Location:</strong> Remote | <strong>Type:</strong> Part-Time</p>
+                        <p>Create logos, posters, and digital designs.</p>
+                        <a href="#apply-form" class="btn btn-outline-primary">Apply Now</a>
+                    </div>
+                </div>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+                <!-- Summer Internship - Digital Marketing -->
+                <div class="col-md-6">
+                    <div class="job-card internship-card">
+                        <h3>Summer Internship - Digital Marketing</h3>
+                        <p><strong>Location:</strong> Hybrid (Remote + Office) | <strong>Type:</strong> Internship</p>
+                        <p>Gain hands-on experience in social media marketing, SEO, and branding strategies. Duration: 2-3 months.</p>
+                        <a href="#apply-form" class="btn btn-outline-primary">Apply Now</a>
+                    </div>
+                </div>
 
+            </div>
+        </div>
+    </section>
+
+    <!-- Apply Now Form -->
+    <section id="apply-form" class="apply-form">
+        <div class="container">
+            <h2 class="text-center">Apply Now</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="apply-box">
+                        <asp:TextBox ID="txtName" runat="server" CssClass="form-control" placeholder="Full Name" required></asp:TextBox><br>
+                        <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control" placeholder="Email Address" required></asp:TextBox><br>
+                        <asp:TextBox ID="txtPhone" runat="server" CssClass="form-control" placeholder="Phone Number" required></asp:TextBox><br>
+                        <asp:FileUpload ID="fuResume" runat="server" CssClass="form-control" /><br>
+                        <asp:Button ID="btnSubmit" runat="server" CssClass="btn btn-primary" Text="Submit Application" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </asp:Content>

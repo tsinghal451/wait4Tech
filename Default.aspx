@@ -1,6 +1,18 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="wait4Tech._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+
+
+    <link
+        id="u-theme-google-font"
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i" />
+    <link
+        id="u-page-google-font"
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" />
+
+
     <style>
         .typed-container {
             font-size: 2rem;
@@ -58,6 +70,48 @@
             }
         }
     </style>
+
+       <style>
+       @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+       .unique-container * {
+           padding: 0;
+           margin: 0;
+           box-sizing: border-box;
+           font-family: "Abril Fatface";
+       }
+
+       .unique-container {
+           width: 100vw;
+           min-height: 100vh;
+           overflow-x: hidden;
+       }
+
+       .unique-mask {
+           height: 100vh;
+           width: 100%;
+           background: #fff;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           mix-blend-mode: screen;
+       }
+
+       .unique-mask h2 {
+           font-size: 80px;
+       }
+
+       .unique-container video {
+           position: fixed;
+           z-index: -1;
+           inset: 0;
+           height: 100%;
+           width: 100%;
+           object-fit: cover;
+       }
+   </style>
+
+
 
     <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -120,32 +174,32 @@
                     <h1 class="text-center">Featured in:</h1>
                     <div class="slider">
                         <div class="logos">
-                            <img alt="javascript" src="assets/img/logo/javascript.512x512.png" class="fab"  />
-                            <img alt="css" src="assets/img/logo/css-3.png" class="fab"  />
-                            <img alt="angular" src="assets/img/logo/angularjs-original.485x512.png" class="fab"  />
-                            <img alt="c" src="assets/img/logo/c-.png" class="fab"  />
+                            <img alt="javascript" src="assets/img/logo/javascript.512x512.png" class="fab" />
+                            <img alt="css" src="assets/img/logo/css-3.png" class="fab" />
+                            <img alt="angular" src="assets/img/logo/angularjs-original.485x512.png" class="fab" />
+                            <img alt="c" src="assets/img/logo/c-.png" class="fab" />
                             <img alt="csharp" src="assets/img/logo/c-sharp.png" class="fab" />
                             <img alt="dotnet" src="assets/img/logo/dotnet.512x489.png" class="fab" />
-                            <img alt="html" src="assets/img/logo/html.png" class="fab"  />
-                            <img alt="java" src="assets/img/logo/java.png" class="fab"   />
-                            <img alt="react" src="assets/img/logo/physics.png" class="fab"   />
-                            <img alt="logo" src="assets/img/logo/logo.png" class="fab"   />
-                         
+                            <img alt="html" src="assets/img/logo/html.png" class="fab" />
+                            <img alt="java" src="assets/img/logo/java.png" class="fab" />
+                            <img alt="react" src="assets/img/logo/physics.png" class="fab" />
+                            <img alt="logo" src="assets/img/logo/logo.png" class="fab" />
+
 
                         </div>
                         <div class="logos">
-                            <img alt="javascript" src="assets/img/logo/javascript.512x512.png" class="fab"   />
-                            <img alt="css" src="assets/img/logo/css-3.png" class="fab"   />
-                            <img alt="angular" src="assets/img/logo/angularjs-original.485x512.png" class="fab"   />
-                            <img alt="c" src="assets/img/logo/c-.png" class="fab"   />
-                            <img alt="csharp" src="assets/img/logo/c-sharp.png" class="fab"   />
-                            <img alt="dotnet" src="assets/img/logo/dotnet.512x489.png" class="fab"   />
-                            <img alt="html" src="assets/img/logo/html.png" class="fab"   />
-                            <img alt="java" src="assets/img/logo/java.png" class="fab"   />
-                            <img alt="react" src="assets/img/logo/physics.png" class="fab"   />
-                            <img alt="logo" src="assets/img/logo/logo.png" class="fab"   />
-                            <img alt="sql" src="assets/img/logo/sql-server.png" class="fab"   />
-                            <img alt="mysql" src="assets/img/logo/pngimg.com - mysql_PNG9 (2).png" class="fab"   />
+                            <img alt="javascript" src="assets/img/logo/javascript.512x512.png" class="fab" />
+                            <img alt="css" src="assets/img/logo/css-3.png" class="fab" />
+                            <img alt="angular" src="assets/img/logo/angularjs-original.485x512.png" class="fab" />
+                            <img alt="c" src="assets/img/logo/c-.png" class="fab" />
+                            <img alt="csharp" src="assets/img/logo/c-sharp.png" class="fab" />
+                            <img alt="dotnet" src="assets/img/logo/dotnet.512x489.png" class="fab" />
+                            <img alt="html" src="assets/img/logo/html.png" class="fab" />
+                            <img alt="java" src="assets/img/logo/java.png" class="fab" />
+                            <img alt="react" src="assets/img/logo/physics.png" class="fab" />
+                            <img alt="logo" src="assets/img/logo/logo.png" class="fab" />
+                            <img alt="sql" src="assets/img/logo/sql-server.png" class="fab" />
+                            <img alt="mysql" src="assets/img/logo/pngimg.com - mysql_PNG9 (2).png" class="fab" />
                         </div>
                     </div>
                 </div>
@@ -197,152 +251,160 @@
         <!-- /About Section -->
 
         <!-- Services Section -->
-        <section id="services" class="services section light-background">
 
-            <div class="container">
 
-                <div class="row gy-4">
 
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="service-item item-cyan position-relative">
-                            <div class="icon">
-                                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
-                                </svg>
-                                <i class="bi bi-activity"></i>
+
+        <section
+            class="u-align-center u-clearfix u-container-align-center u-grey-5 u-section-1"
+            id="sec-1dbe">
+            <div
+                class="u-clearfix u-sheet u-valign-bottom-sm u-valign-bottom-xs u-sheet-1">
+                <h2 class="u-custom-font u-font-raleway u-text u-text-default u-text-1">Our Services
+                </h2>
+                <img
+                    class="u-image u-image-round u-image-1"
+                    src="assets/img/clients/pexels-photo-2381069.jpeg"
+                    alt=""
+                    data-image-width="1620"
+                    data-image-height="1080" />
+                <div class="u-list u-list-1">
+                    <div class="u-repeater u-repeater-1">
+                        <div
+                            class="u-align-center u-container-align-center u-container-style u-list-item u-radius-15 u-repeater-item u-shape-round u-white u-list-item-1">
+                            <div
+                                class="u-container-layout u-similar-container u-container-layout-1">
+                                <span
+                                    class="u-black u-icon u-icon-rounded u-radius-10 u-text-white u-icon-1">
+                                    <svg
+                                        class="u-svg-link"
+                                        preserveAspectRatio="xMidYMin slice"
+                                        viewBox="0 0 512 512"
+                                        style="">
+                                        <use xlink:href="#svg-265b"></use></svg><svg
+                                            class="u-svg-content"
+                                            viewBox="0 0 512 512"
+                                            id="svg-265b">
+                                            <path
+                                                d="m467 1h-422c-24.813 0-45 20.187-45 45v420c0 24.813 20.187 45 45 45h422c24.813 0 45-20.187 45-45v-420c0-24.813-20.187-45-45-45zm-422 30h422c8.271 0 15 6.729 15 15v75h-452v-75c0-8.271 6.729-15 15-15zm422 450h-422c-8.271 0-15-6.729-15-15v-315h452v315c0 8.271-6.729 15-15 15z">
+                                            </path>
+                                            <path
+                                                d="m306.909 197.213c-7.614-3.263-16.433.264-19.696 7.878l-90 210c-3.264 7.614.264 16.433 7.878 19.696 7.617 3.264 16.434-.266 19.696-7.878l90-210c3.264-7.615-.264-16.433-7.878-19.696z">
+                                            </path>
+                                            <path
+                                                d="m177.713 246.629c-5.176-6.469-14.617-7.517-21.083-2.342l-75 60c-7.499 5.997-7.504 17.424 0 23.426l75 60c6.469 5.176 15.91 4.126 21.083-2.342 5.175-6.469 4.127-15.909-2.343-21.083l-60.358-48.288 60.358-48.287c6.47-5.175 7.518-14.614 2.343-21.084z">
+                                            </path>
+                                            <path
+                                                d="m430.37 304.287-75-60c-6.469-5.176-15.909-4.127-21.083 2.342-5.175 6.469-4.127 15.909 2.343 21.083l60.358 48.288-60.358 48.287c-6.47 5.175-7.518 14.614-2.343 21.083 5.182 6.476 14.623 7.512 21.083 2.342l75-60c7.499-5.997 7.504-17.423 0-23.425z">
+                                            </path>
+                                            <circle cx="76" cy="76" r="15"></circle>
+                                            <circle cx="136" cy="76" r="15"></circle>
+                                            <circle cx="196" cy="76" r="15"></circle>
+                                            <path
+                                                d="m346 91h90c8.284 0 15-6.716 15-15s-6.716-15-15-15h-90c-8.284 0-15 6.716-15 15s6.716 15 15 15z">
+                                            </path></svg></span>
+                                <h5 class="u-custom-font u-font-raleway u-text u-text-2">Mobile Development
+                                </h5>
+                                <p class="u-text u-text-grey-25 u-text-3">
+                                    Sample text. Click to select the text box. Click again or
+               double click to start editing the text.&nbsp;Excepteur sint
+               occaecat cupidatat non proident.
+                                </p>
+                                <a
+                                    href="#"
+                                    class="u-active-none u-border-2 u-border-active-black u-border-grey-15 u-border-hover-black u-btn u-button-style u-hover-none u-none u-text-body-color u-text-hover-palette-1-base u-btn-1">more</a>
                             </div>
-                            <a href="services-details.aspx" class="stretched-link">
-                                <h3>Nesciunt Mete</h3>
-                            </a>
-                            <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+                        </div>
+                        <div
+                            class="u-align-center u-container-align-center u-container-style u-list-item u-radius-15 u-repeater-item u-shape-round u-white u-list-item-2">
+                            <div
+                                class="u-container-layout u-similar-container u-container-layout-2">
+                                <span
+                                    class="u-black u-icon u-icon-rounded u-radius-10 u-text-white u-icon-2">
+                                    <svg
+                                        class="u-svg-link"
+                                        preserveAspectRatio="xMidYMin slice"
+                                        viewBox="0 0 512 512"
+                                        style="">
+                                        <use xlink:href="#svg-da38"></use></svg><svg
+                                            class="u-svg-content"
+                                            viewBox="0 0 512 512"
+                                            id="svg-da38">
+                                            <g>
+                                                <path
+                                                    d="m511 307c0-5.682-3.21-10.876-8.292-13.416l-43.168-21.584 43.168-21.584c5.082-2.54 8.292-7.734 8.292-13.416s-3.21-10.876-8.292-13.416l-112.921-56.46c-.575-4.484-3.146-8.659-7.364-11.094l-12.3-7.102c.583-4.672.877-9.328.877-13.928s-.294-9.256-.877-13.928l12.3-7.102c7.175-4.143 9.633-13.316 5.49-20.49l-30-51.961c-4.143-7.175-13.316-9.634-20.49-5.49l-12.353 7.131c-7.489-5.679-15.536-10.359-24.07-14v-14.16c0-8.284-6.716-15-15-15h-60c-8.284 0-15 6.716-15 15v14.16c-8.534 3.641-16.581 8.321-24.07 14l-12.353-7.131c-7.177-4.144-16.349-1.684-20.49 5.49l-30 51.961c-4.143 7.174-1.685 16.348 5.49 20.49l12.3 7.102c-.583 4.672-.877 9.328-.877 13.928s.294 9.256.877 13.928l-12.3 7.102c-4.217 2.435-6.789 6.611-7.364 11.094l-112.921 56.46c-5.082 2.54-8.292 7.734-8.292 13.416s3.21 10.876 8.292 13.416l43.168 21.584-43.168 21.584c-5.082 2.54-8.292 7.734-8.292 13.416s3.21 10.876 8.292 13.416l43.168 21.584-43.168 21.584c-5.082 2.54-8.292 7.734-8.292 13.416s3.21 10.876 8.292 13.416l240 120c2.111 1.056 4.409 1.584 6.708 1.584s4.597-.528 6.708-1.584l240-120c5.082-2.54 8.292-7.734 8.292-13.416s-3.21-10.876-8.292-13.416l-43.168-21.584 43.168-21.584c5.082-2.54 8.292-7.734 8.292-13.416zm-337.928-153.552c-1.375-6.209-2.072-12.416-2.072-18.448s.697-12.239 2.072-18.448c1.416-6.391-1.476-12.962-7.145-16.234l-8.36-4.827 15-25.98 8.422 4.861c5.674 3.275 12.814 2.49 17.641-1.938 9.372-8.598 20.093-14.832 31.865-18.53 6.252-1.965 10.505-7.758 10.505-14.311v-9.593h30v9.593c0 6.553 4.253 12.347 10.505 14.311 11.772 3.698 22.493 9.933 31.865 18.53 4.826 4.428 11.967 5.213 17.641 1.938l8.422-4.861 15 25.98-8.36 4.827c-5.669 3.272-8.561 9.844-7.145 16.234 1.375 6.209 2.072 12.416 2.072 18.448s-.697 12.239-2.072 18.448c-1.416 6.391 1.476 12.962 7.145 16.234l8.36 4.827-15 25.98-8.422-4.862c-5.674-3.275-12.816-2.49-17.641 1.938-9.371 8.598-20.092 14.833-31.865 18.531-6.252 1.964-10.505 7.758-10.505 14.311v9.593h-30v-9.593c0-6.553-4.253-12.347-10.505-14.311-11.773-3.698-22.494-9.934-31.865-18.531-4.825-4.428-11.967-5.214-17.641-1.938l-8.422 4.862-15-25.98 8.36-4.827c5.67-3.272 8.561-9.843 7.145-16.234zm-123.531 83.552 84.943-42.472 19.603 33.952c4.143 7.176 13.317 9.634 20.49 5.49l12.353-7.132c7.489 5.68 15.536 10.359 24.07 14.001v14.161c0 8.284 6.716 15 15 15h60c8.284 0 15-6.716 15-15v-14.16c8.534-3.642 16.581-8.321 24.07-14.001l12.353 7.132c7.173 4.143 16.348 1.684 20.49-5.49l19.603-33.952 84.943 42.471-206.459 103.229zm412.918 140-206.459 103.229-206.459-103.229 36.459-18.23 163.292 81.646c2.111 1.056 4.409 1.584 6.708 1.584s4.597-.528 6.708-1.584l163.292-81.646zm-206.459 33.229-206.459-103.229 36.459-18.23 163.292 81.646c2.111 1.056 4.409 1.584 6.708 1.584s4.597-.528 6.708-1.584l163.292-81.646 36.459 18.23z">
+                                                </path>
+                                                <path
+                                                    d="m256 190c30.327 0 55-24.673 55-55s-24.673-55-55-55-55 24.673-55 55 24.673 55 55 55zm0-80c13.785 0 25 11.215 25 25s-11.215 25-25 25-25-11.215-25-25 11.215-25 25-25z">
+                                                </path>
+                                            </g></svg></span>
+                                <h5 class="u-custom-font u-font-raleway u-text u-text-4">Mobility Services
+                                </h5>
+                                <p class="u-text u-text-grey-25 u-text-5">
+                                    Sample text. Click to select the text box. Click again or
+               double click to start editing the text.&nbsp;Excepteur sint
+               occaecat cupidatat non proident.
+                                </p>
+                                <a
+                                    href="#"
+                                    class="u-active-none u-border-2 u-border-active-black u-border-grey-15 u-border-hover-black u-btn u-button-style u-hover-none u-none u-text-body-color u-text-hover-palette-1-base u-btn-2">more</a>
+                            </div>
+                        </div>
+                        <div
+                            class="u-align-center u-container-align-center u-container-style u-list-item u-radius-15 u-repeater-item u-shape-round u-white u-list-item-3">
+                            <div
+                                class="u-container-layout u-similar-container u-container-layout-3">
+                                <span
+                                    class="u-black u-icon u-icon-rounded u-radius-10 u-text-white u-icon-3">
+                                    <svg
+                                        class="u-svg-link"
+                                        preserveAspectRatio="xMidYMin slice"
+                                        viewBox="0 0 512 512"
+                                        style="">
+                                        <use xlink:href="#svg-fd54"></use></svg><svg
+                                            class="u-svg-content"
+                                            viewBox="0 0 512 512"
+                                            id="svg-fd54">
+                                            <path
+                                                d="m155.6875 311h-32.9375v-50.984375c0-16.585937-6.621094-31.644531-17.347656-42.699219 18.320312-12.175781 30.425781-32.992187 30.425781-56.59375 0-37.445312-30.464844-67.914062-67.914063-67.914062-37.449218 0-67.914062 30.464844-67.914062 67.914062 0 20.402344 9.054688 38.714844 23.339844 51.175782-14.203125 11.25-23.339844 28.628906-23.339844 48.117187v151.859375h100.125v100.125h100.875v-155.6875c0-24.984375-20.328125-45.3125-45.3125-45.3125zm-87.773438-188.191406c20.90625 0 37.914063 17.007812 37.914063 37.914062s-17.007813 37.917969-37.914063 37.917969-37.914062-17.011719-37.914062-37.917969 17.007812-37.914062 37.914062-37.914062zm103.085938 359.191406h-40.875v-100.125h-100.125v-121.859375c0-17.300781 14.074219-31.375 31.375-31.375s31.375 14.074219 31.375 31.375v80.984375h62.9375c8.441406 0 15.3125 6.871094 15.3125 15.3125zm0 0">
+                                            </path>
+                                            <path
+                                                d="m488.660156 211.898438c14.285156-12.460938 23.339844-30.773438 23.339844-51.175782 0-37.449218-30.464844-67.914062-67.914062-67.914062-37.449219 0-67.914063 30.464844-67.914063 67.914062 0 23.597656 12.105469 44.417969 30.425781 56.59375-10.726562 11.054688-17.347656 26.113282-17.347656 42.695313v50.988281h-32.9375c-24.984375 0-45.3125 20.328125-45.3125 45.3125v155.6875h100.875v-100.125h100.125v-151.859375c0-19.488281-9.136719-36.867187-23.339844-48.117187zm-44.574218-89.089844c20.90625 0 37.914062 17.007812 37.914062 37.914062s-17.007812 37.917969-37.914062 37.917969-37.914063-17.011719-37.914063-37.917969 17.007813-37.914062 37.914063-37.914062zm37.914062 259.066406h-100.125v100.125h-40.875v-125.6875c0-8.441406 6.871094-15.3125 15.3125-15.3125h62.9375v-80.984375c0-17.300781 14.074219-31.375 31.375-31.375s31.375 14.074219 31.375 31.375zm0 0">
+                                            </path>
+                                            <path
+                                                d="m352 121.664062v-79.332031c0-23.34375-18.988281-42.332031-42.332031-42.332031h-107.335938c-23.34375 0-42.332031 18.988281-42.332031 42.332031v79.332031c0 23.34375 18.988281 42.335938 42.332031 42.335938h18.171875l35.496094 61.480469 35.496094-61.480469h18.171875c23.34375 0 42.332031-18.992188 42.332031-42.335938zm-30 0c0 6.804688-5.53125 12.335938-12.332031 12.335938h-35.492188l-18.175781 31.480469-18.175781-31.480469h-35.492188c-6.800781 0-12.332031-5.53125-12.332031-12.335938v-79.332031c0-6.800781 5.53125-12.332031 12.332031-12.332031h107.335938c6.800781 0 12.332031 5.53125 12.332031 12.332031zm0 0">
+                                            </path></svg></span>
+                                <h5 class="u-custom-font u-font-raleway u-text u-text-6">Software Consulting
+                                </h5>
+                                <p class="u-text u-text-grey-25 u-text-7">
+                                    Sample text. Click to select the text box. Click again or
+               double click to start editing the text.&nbsp;Excepteur sint
+               occaecat cupidatat non proident.
+                                </p>
+                                <a
+                                    href="#"
+                                    class="u-active-none u-border-2 u-border-active-black u-border-grey-15 u-border-hover-black u-btn u-button-style u-hover-none u-none u-text-body-color u-text-hover-palette-1-base u-btn-3">more</a>
+                            </div>
                         </div>
                     </div>
-                    <!-- End Service Item -->
-
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="service-item item-orange position-relative">
-                            <div class="icon">
-                                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
-                                </svg>
-                                <i class="bi bi-broadcast"></i>
-                            </div>
-                            <a href="services-details.aspx" class="stretched-link">
-                                <h3>Eosle Commodi</h3>
-                            </a>
-                            <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
-                        </div>
-                    </div>
-                    <!-- End Service Item -->
-
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                        <div class="service-item item-teal position-relative">
-                            <div class="icon">
-                                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
-                                </svg>
-                                <i class="bi bi-easel"></i>
-                            </div>
-                            <a href="services-details.aspx" class="stretched-link">
-                                <h3>Ledo Markt</h3>
-                            </a>
-                            <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
-                        </div>
-                    </div>
-                    <!-- End Service Item -->
-
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-                        <div class="service-item item-red position-relative">
-                            <div class="icon">
-                                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
-                                </svg>
-                                <i class="bi bi-bounding-box-circles"></i>
-                            </div>
-                            <a href="services-details.aspx" class="stretched-link">
-                                <h3>Asperiores Commodit</h3>
-                            </a>
-                            <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-                            <a href="services-details.aspx" class="stretched-link"></a>
-                        </div>
-                    </div>
-                    <!-- End Service Item -->
-
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-                        <div class="service-item item-indigo position-relative">
-                            <div class="icon">
-                                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
-                                </svg>
-                                <i class="bi bi-calendar4-week icon"></i>
-                            </div>
-                            <a href="services-details.aspx" class="stretched-link">
-                                <h3>Velit Doloremque</h3>
-                            </a>
-                            <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-                            <a href="services-details.aspx" class="stretched-link"></a>
-                        </div>
-                    </div>
-                    <!-- End Service Item -->
-
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-                        <div class="service-item item-pink position-relative">
-                            <div class="icon">
-                                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
-                                </svg>
-                                <i class="bi bi-chat-square-text"></i>
-                            </div>
-                            <a href="services-details.aspx" class="stretched-link">
-                                <h3>Dolori Architecto</h3>
-                            </a>
-                            <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-                            <a href="services-details.aspx" class="stretched-link"></a>
-                        </div>
-                    </div>
-                    <!-- End Service Item -->
-
                 </div>
-
             </div>
-
         </section>
         <!-- /Services Section -->
 
-        <div>
-            <span id="trigger"></span>
-            <div class="container">
-                <!-- SVG	 -->
-                <div class="svg-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920px" height="1080px" preserveAspectRatio="xMidYMid slice">
-                        <defs>
-                            <!-- Mask -->
-                            <mask id="mask" x="0" y="0" width="1920" height="1080">
-                                <rect x="0" y="0" width="1920" height="1080" />
-                                <text x="960" y="1em">X</text>
-                            </mask>
-                        </defs>
-                        <rect x="0" y="0" width="1920" height="1080" />
-                    </svg>
-                </div>
 
-                <!-- Video	
-  Video from http://www.wedistill.io/
-  -->
+        <!-- animation effect -->
+        <div class="unique-container">
+            <video autoplay loop muted>
+                <source src="https://videos.pexels.com/video-files/19026925/19026925-uhd_2560_1440_25fps.mp4" type="video/mp4">
+            </video>
 
-                <div class="video-container">
-                    <video id="video" autoplay playsinline muted="muted" preload="auto" loop="loop" poster="https://assets.codepen.io/687837/poster.png">
-                        <source src="https://hellosusan.io/assets/video.mp4" type="video/mp4">
-                    </video>
-                </div>
-
+            <div class="unique-mask">
+                <h2>Wait4Tech</h2>
             </div>
-
-            <section class="nextSection">
-                <p>HELLO</p>
-            </section>
-
         </div>
+
+
 
         <!-- Portfolio Section -->
         <section id="portfolio" class="portfolio section">
@@ -564,40 +626,22 @@
             });
         });
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
 
     <script>
-        // Greensock
-        var tl = new TimelineMax();
-
-        tl.add(
-            TweenMax.to('.video-container', 1, { scale: 0.5, transformOrigin: "50%, 50%", ease: Power2.easeInOut })
-        )
-
-        tl.add(
-            TweenMax.to(".svg-container", 1, { scale: 10, transformOrigin: "50%, 50%", ease: Power2.easeInOut }),
-            "-=1"
-        )
-
-        // ScrollMagic
-        var controller = new ScrollMagic.Controller();
-
-        // container pin
-        var startpin = new ScrollMagic.Scene({
-            duration: 800
-        })
-            .setPin(".container")
-            .addTo(controller);
-
-        // tween
-        new ScrollMagic.Scene({
-            duration: 500
-        })
-            .setTween(tl)
-            .addTo(controller);
-
-        $('video').get(0).play();
-
+        gsap.to(".unique-mask h2", {
+            scale: 300,
+            scrollTrigger: {
+                trigger: ".unique-container",
+                scrub: 1,
+                pin: true,
+                start: "top top",
+                end: "+=500",
+                ease: "none"
+            },
+        });
     </script>
-
 
 </asp:Content>

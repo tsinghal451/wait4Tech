@@ -100,7 +100,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="assets\2516159-hd_1920_1080_24fps.mp4" />
     <Content Include="assets\css\main.css" />
+    <Content Include="assets\img\7575198.jpg" />
+    <Content Include="assets\img\caeer.jpg" />
+    <Content Include="assets\img\carrer.jpg" />
     <Content Include="assets\img\about.jpg" />
     <Content Include="assets\img\apple-touch-icon.png" />
     <Content Include="assets\img\blog\blog-1.jpg" />
@@ -125,10 +129,12 @@
     <Content Include="assets\img\clients\client-6.png" />
     <Content Include="assets\img\clients\client-7.png" />
     <Content Include="assets\img\clients\client-8.png" />
+    <Content Include="assets\img\clients\pexels-photo-2381069.jpeg" />
     <Content Include="assets\img\favicon.png" />
     <Content Include="assets\img\hero-carousel\hero-carousel-1.jpg" />
     <Content Include="assets\img\hero-carousel\hero-carousel-2.jpg" />
     <Content Include="assets\img\hero-carousel\hero-carousel-3.jpg" />
+    <Content Include="assets\img\location.png" />
     <Content Include="assets\img\logo.png" />
     <Content Include="assets\img\logo\angularjs-original.485x512.png" />
     <Content Include="assets\img\logo\c-.png" />
@@ -146,6 +152,7 @@
     <Content Include="assets\img\logo\sql-server.png" />
     <Content Include="assets\img\loooo-removebg-preview.png" />
     <Content Include="assets\img\loooo.png" />
+    <Content Include="assets\img\mail.png" />
     <Content Include="assets\img\masonry-portfolio\masonry-portfolio-1.jpg" />
     <Content Include="assets\img\masonry-portfolio\masonry-portfolio-2.jpg" />
     <Content Include="assets\img\masonry-portfolio\masonry-portfolio-3.jpg" />
@@ -165,6 +172,7 @@
     <Content Include="assets\img\team\team-2.jpg" />
     <Content Include="assets\img\team\team-3.jpg" />
     <Content Include="assets\img\team\team-4.jpg" />
+    <Content Include="assets\img\telephone.png" />
     <Content Include="assets\img\testimonials\testimonials-1.jpg" />
     <Content Include="assets\img\testimonials\testimonials-2.jpg" />
     <Content Include="assets\img\testimonials\testimonials-3.jpg" />
@@ -232,8 +240,15 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\contact.css" />
+    <Content Include="Content\cr.css" />
+    <Content Include="Content\crs.js" />
+    <Content Include="Content\index.css" />
     <Content Include="Content\main.css" />
+    <Content Include="Content\nicepage.css" />
+    <Content Include="Content\Services.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\us.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
@@ -302,7 +317,9 @@
     <Content Include="Scripts\jquery-3.7.0.min.js" />
     <Content Include="Scripts\jquery-3.7.0.slim.js" />
     <Content Include="Scripts\jquery-3.7.0.slim.min.js" />
+    <Content Include="Scripts\jquery.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\nicepage.js" />
     <Content Include="Scripts\WebForms\DetailsView.js" />
     <Content Include="Scripts\WebForms\Focus.js" />
     <Content Include="Scripts\WebForms\GridView.js" />
@@ -329,6 +346,10 @@
     <Content Include="Site.Master" />
     <Content Include="team.aspx" />
     <Content Include="terms.aspx" />
+    <Content Include="tets.aspx" />
+    <Content Include="us.aspx" />
+    <Content Include="us2.aspx" />
+    <Content Include="us2.css" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -438,6 +459,27 @@
     </Compile>
     <Compile Include="terms.aspx.designer.cs">
       <DependentUpon>terms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tets.aspx.cs">
+      <DependentUpon>tets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tets.aspx.designer.cs">
+      <DependentUpon>tets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="us.aspx.cs">
+      <DependentUpon>us.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="us.aspx.designer.cs">
+      <DependentUpon>us.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="us2.aspx.cs">
+      <DependentUpon>us2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="us2.aspx.designer.cs">
+      <DependentUpon>us2.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
